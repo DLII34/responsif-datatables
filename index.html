@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Write By @oranginisiald2nd -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DataTable CSS  -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css">
+
+    <title>DataTable with Action Buttons | devRasen</title>
+</head>
+
+<body>
+    <!-- Main Content -->
+    <div class="container p-3 my-5 bg-light border border-primary">
+        <!-- DataTable Code starts -->
+        <table id="example" class="table table-striped nowrap" style="width:100%">
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                    <th>Extn.</th>
+                    <th>E-mail</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Colleen</td>
+                    <td>Hurst</td>
+                    <td>Javascript Developer</td>
+                    <td>San Francisco</td>
+                    <td>39</td>
+                    <td>2009-09-15</td>
+                    <td>$205,500</td>
+                    <td>2360</td>
+                    <td>c.hurst@datatables.net</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm me-1">
+                            <i class="bi bi-pencil-fill"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash-fill"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sonya</td>
+                    <td>Frost</td>
+                    <td>Software Engineer</td>
+                    <td>Edinburgh</td>
+                    <td>23</td>
+                    <td>2008-12-13</td>
+                    <td>$103,600</td>
+                    <td>1667</td>
+                    <td>s.frost@datatables.net</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm me-1">
+                            <i class="bi bi-pencil-fill"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash-fill"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- DataTable JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+    <!-- Custom JS -->
+    <script>
+        $("#example").DataTable({
+            responsive: true,
+        });
+    </script>
+</body>
+</html>
